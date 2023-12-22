@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div id="el">
+      <div id="hidden">Hello!</div>
+    </div>
+
+    <script>
+      const el = document.getElementById("el");
+      const hidden = document.getElementById("hidden");
+
+      el.addEventListener("mouseover", function MouseOver() {
+        hidden.style.display = "block";
+      });
+
+      el.addEventListener("mouseout", function MouseOut() {
+        hidden.style.display = "none";
+      });
+    </script>
+  </body>
 </html>
